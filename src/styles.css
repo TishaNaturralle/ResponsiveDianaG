@@ -9,12 +9,13 @@ body{
 
 header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/IMG_bg.JPG");
+    url("../images/IMG_bg.JPG") ;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     padding: 200px 0;
     text-align: center;
+    
 
 }
 
@@ -62,7 +63,7 @@ footer{
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0;
+   
 }
 
 footer h3{
@@ -96,6 +97,40 @@ footer a {
 section {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 100px;
+}
+
+main{
+    background-color: white;
+}
+
+main h2{
+   font-weight: 70px; 
+   font-size: 10px;
+   line-height: 1.5;
+   letter-spacing: 5px;
+   color: #272044;
+   opacity: 0.3;
+   margin: 0;
+   text-transform: uppercase;
+}
+
+main h3{
+   font-weight: 700; 
+   font-size: 40px;
+   line-height: 1.5;
+   color: #272044;
+   margin: 0;
+}
+
+main p{
+   font-weight: 400; 
+   font-style: normal;
+   font-size: 16px;
+   line-height: 1.5;
+   color: #272044;
+   opacity: 0.7;
+  
 }
 .container{
     max-width: 1400px;
@@ -105,8 +140,18 @@ section {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-gap:64px;
+    grid-template-columns: 1fr 2fr 2fr
 } 
+
+.grid-2-columns{
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.img-responsive{
+    max-width: 100%;
+}
 
 @media (max-width: 900px) {
     header{
@@ -123,5 +168,14 @@ section {
 
     header h3 {
         font-size: 12px;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        grid: 32px;
+    }
+
+    section{
+        padding: 30px;
     }
 }
