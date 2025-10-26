@@ -161,6 +161,10 @@ main p{
 
 }
 
+.card-header.grid{
+   grid-gap: 0; 
+}
+
 .card-body{
     padding: 30px;
 }
@@ -190,6 +194,11 @@ main p{
   
 }
 
+.embed{
+   width: 100%; 
+   aspect-ratio: 1/1;
+}
+
 .grid {
    display: grid;
     grid-gap:64px;
@@ -206,7 +215,7 @@ main p{
 }
 
 .img-responsive{
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -229,6 +238,14 @@ main p{
 
     header h3 {
         font-size: 12px;
+    }
+
+    .card-header img{
+        display: none;
+    }
+
+    .embed{
+        aspect-ratio: 16/9;
     }
 
     .grid{
